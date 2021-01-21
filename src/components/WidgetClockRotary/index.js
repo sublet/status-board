@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import moment from 'moment-timezone'
 
-import './styles.scss';
+import './styles.scss'
 
-// https://codepen.io/kylewetton/pen/QJbOjw
+// Credit: https://codepen.io/kylewetton/pen/QJbOjw
+// Inspired: https://codepen.io/iam/pen/gHkeq
 
 const WidgetClockRotary = props => {
   const clockSecondEl = useRef(null);
