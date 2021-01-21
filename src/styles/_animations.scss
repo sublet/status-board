@@ -1,0 +1,38 @@
+// animations
+
+@keyframes error-success-fade-label {
+  from { background-color: $darkGreen; }
+  to { background-color: $grey3; }
+}
+
+@keyframes error-success-fade-content {
+  from { 
+    background-color: $baseGreen;
+    color: $boseBlack;
+  
+    .outlineButton {
+      color: $boseBlack;
+      border-color: $boseBlack;
+    } 
+  }
+  to { 
+    background-color: transparent;
+    color: inherit;
+  
+    .outlineButton {
+      color: blue;
+      border-color: inherit;
+    }
+  }
+}
+
+@keyframes error-success-fade-button {
+  from { 
+    color: $boseBlack;
+    border-color: $boseBlack;
+  }
+  to { 
+    color: inherit;
+    border-color: inherit;
+  }
+}

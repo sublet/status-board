@@ -1,0 +1,129 @@
+/**
+ * COLORS
+**/
+
+$base-transition: all 0.3s ease-out;
+
+// Bose branding
+$boseBlack: #181818;
+$boseWhite: #F8F8F8;
+
+// neutrals
+$pureBlack: #000000;
+$grey2: #262626;
+$grey3: #333333;
+$grey4: #4D4D4D;
+$grey7: #737373;      // NOTE: updated value
+$grey9: #999999;      // NOTE: currently unused
+$greyA: #A7A7A7;      // NOTE: updated value
+$greyC: #CCCCCC;
+$greyE: #E6E6E6;
+$greyF: #F2F2F2;      // NOTE: currently unused
+$pureWhite: #FFFFFF;
+$blue: #0066CC;
+
+// base colors
+$baseCyan: #47ACEB;   // NOTE: updated value, updated name, currently unused :)
+$baseYellow: #FFC800; // NOTE: updated value
+$baseGreen: #00CC74;  // NOTE: updated value
+$baseRed: #D0302F;    // NOTE: updated value
+$basePurple: #CB47EB;
+
+// light / dark color variations
+$darkCyan: #1997E6;
+$darkYellow: #CCA000;
+$darkGreen: #009957;
+$lightRed: #ECACAC;
+$mediumRed: #D85555; // accessible against $boseBlack background
+$darkRed: #A62626;
+$errorPink: #ECACAC;
+$blarghGreen: #27AE60;
+
+// exporting for use in JS
+:export {
+  pureBlack: $pureBlack;
+  boseBlack: $boseBlack;
+  grey2: $grey2;
+  grey3: $grey3;
+  grey4: $grey4;
+  grey7: $grey7;
+  grey9: $grey9;
+  greyA: $greyA;
+  greyC: $greyC;
+  greyE: $greyE;
+  greyF: $greyF;
+  boseWhite: $boseWhite;
+  pureWhite: $pureWhite;
+  baseRed: $baseRed;
+  baseCyan: $baseCyan;
+  baseYellow: $baseYellow;
+  blarghGreen: $blarghGreen
+}
+
+
+/**
+ * SPACE
+**/
+$base-spacing-unit: 8px;
+$space-half: $base-spacing-unit / 2;
+$space-1x: $base-spacing-unit;
+$space-2x: $base-spacing-unit * 2;
+$space-3x: $base-spacing-unit * 3;
+$space-4x: $base-spacing-unit * 4;
+$space-5x: $base-spacing-unit * 5;
+$space-6x: $base-spacing-unit * 6;
+$space-7x: $base-spacing-unit * 7;
+$space-8x: $base-spacing-unit * 8;
+$space-10x: $base-spacing-unit * 10;
+$space-12x: $base-spacing-unit * 12;
+$space-15x: $base-spacing-unit * 15;
+$space-16x: $base-spacing-unit * 16;
+$space-18x: $base-spacing-unit * 18;
+$space-20x: $base-spacing-unit * 20;
+$space-27x: $base-spacing-unit * 27;
+
+
+/**
+ * FONTS
+**/
+$base-font-family: 'Gotham', sans-serif;
+$bold-font-family: 'GothamBold', sans-serif;
+$size-headline1: 3.2rem;  // NOTE: currently unused
+$size-headline2: 2.4rem;
+$size-headline3: 2.0rem;
+$size-text-half: 0.8rem;
+$size-text1: 1.6rem;
+$size-text2: 1.4rem;
+$size-text3: 1.2rem;
+$size-micro: 1.0rem;
+
+
+/**
+ * BREAKPOINTS
+**/
+$breakpoint-small: 576px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-gigantic: 1200px;
+
+
+/**
+ * OTHER
+**/
+$base-border-radius: 16px;
+$big-border-radius: 32px;
+$mini-border-radius: 6px;
+$omg-another-radius: 4px;
+$modal-radius: 2px;
+$modal-border: $modal-radius solid $grey7;
+
+$fixed-button-width: 240px;
+
+$header-height: 4rem;
+$content-height: calc(100vh - #{$header-height});
+$left-panel-width: 240px;
+$right-panel-width: 320px;
+
+$base-transition: all 0.3s ease-out;
+
+$focus-shadow: 0 0 2px 4px rgba($darkCyan,.7);

@@ -1,0 +1,71 @@
+@mixin unicorn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Breakpoint Mixin
+@mixin bp($point) {
+  @if $point == Baby {
+    // 320
+    @media (min-width: 20.0625rem) {
+      @content;
+    }
+  }
+  @if $point == Toddler {
+    // 375
+    @media (min-width: 23.4375rem) {
+      @content;
+    }
+  }
+  @if $point == Kid {
+    // 600
+    @media (min-width: 37.5rem) {
+      @content;
+    }
+  } @else if $point == Mama {
+    // 767
+    @media (min-width: 47.9375rem) {
+      @content;
+    }
+  } @else if $point == BigMama {
+    // 960
+    @media (min-width: 60rem) {
+      @content;
+    }
+  } @else if $point == Uncle {
+    // 996
+    @media (min-width: 65.25rem) {
+      @content;
+    }
+  } @else if $point == UnclePapa {
+    // 1000
+    @media (min-width: 62.5rem) {
+      @content;
+    }
+  } @else if $point == Papa {
+    // 1080
+    @media (min-width: 67.5rem) {
+      @content;
+    }
+  } @else if $point == BigPapa {
+    // 1136
+    @media (min-width: 71rem) {
+      @content;
+    }
+  } @else if $point == Grand {
+    // 1200
+    @media (min-width: 75rem) {
+      @content;
+    }
+  } @else if $point == Supa {
+    // 1600
+    @media (min-width: 100rem) {
+      @content;
+    }
+  } @else if $point == Tablet {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+}
