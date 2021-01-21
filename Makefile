@@ -5,8 +5,11 @@ start:
 	rm -rf .build
 	npm start
 
-lint:
-	npm run lint
+test:
+	npm test
+
+test:
+	npm run test
 
 clean:
 	rm -rf node_modules
@@ -14,4 +17,4 @@ clean:
 	npm install
 
 ngrok:
-	ngrok http 8085 -subdomain=speakeasy-react
+	ngrok http 8085 -subdomain=your-domain
