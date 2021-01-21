@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { fetch } from 'lib/widget-utils'
 
+// https://codepen.io/Call_in/pen/pMYGbZ
+
 const WidgetWeather = props => {
   const [conditions, setConditions] = useState(null)
 
