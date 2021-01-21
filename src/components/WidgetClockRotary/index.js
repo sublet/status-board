@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import moment from 'moment-timezone'
 
-// import styles from './styles.module.scss';
 import './styles.scss';
 
-
+// https://codepen.io/kylewetton/pen/QJbOjw
 
 const WidgetClockRotary = props => {
   const clockSecondEl = useRef(null);
@@ -18,14 +17,9 @@ const WidgetClockRotary = props => {
     var minutes = (currentSec / 3600) % 1;
     var hours = (currentSec / 43200) % 1;
 
-    console.log(60 * seconds)
-    console.log(3600 * seconds)
-    console.log(43200 * seconds)
-
     setTime(60 * seconds, "second");
     setTime(3600 * minutes, "minute");
     setTime(43200 * hours, "hour");    
-
   })
 
   const _getDateInstance = () => {
@@ -43,77 +37,76 @@ const WidgetClockRotary = props => {
     let now = nowMoment.toDate()
     let today = nowMoment.startOf('day').toDate()
     let diff = now - today; 
-    console.log(now, today, diff)
     return Math.round(diff / 1000);
   }
 
   return (
     <div className="widget widget--rotaryClock">
-      <div class="clock">
-        <div class="clock__second" ref={clockSecondEl}></div>
-        <div class="clock__minute" ref={clockMinuteEl}></div>
-        <div class="clock__hour" ref={clockHourEl}></div>
-        <div class="clock__axis"></div>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
-          <section class="clock__indicator"></section>
+      <div className="clock">
+        <div className="clock__second" ref={clockSecondEl}></div>
+        <div className="clock__minute" ref={clockMinuteEl}></div>
+        <div className="clock__hour" ref={clockHourEl}></div>
+        <div className="clock__axis"></div>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
+          <section className="clock__indicator"></section>
       </div>
     </div>
   ) 

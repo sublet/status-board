@@ -12,7 +12,8 @@ const Home = props => {
   const weather = <WidgetWeather apiKey="4396d83008e8fffd5da04d56eba9faba" zipCode="07052" />
   const stat1 = <WidgetStat />
   const clockEaster = <WidgetClockRotary location="America/New_York" locationText="New York, NY" />
-  const closkPacific = <WidgetClock location="America/Los_Angeles" locationText="Santa Monica, NY" />
+  const closkPacific = <WidgetClockRotary location="America/Los_Angeles" locationText="Santa Monica, CA" />
+  // const closkPacific = <WidgetClock location="America/Los_Angeles" locationText="Santa Monica, NY" />
 
   return (
     <Fragment>
