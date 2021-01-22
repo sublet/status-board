@@ -11,11 +11,11 @@ const host = process.env.REACT_APP_REST_API;
 
 //   if (userInfo) {
 //     userInfo = JSON.parse(userInfo)
-//     const token = Cookies.get('speakeasyToken')
+//     const token = Cookies.get('statusBoardToken')
 //     try {
 //       return { 
 //         'X-ApiKey': 'e8Gnup0er0y5JdijVIGU5Ukovgbk9r1S',
-//         'X-Speakeasy-Token': token,
+//         'X-StatusBoard-Token': token,
 //         'X-Service': `web-${process.env.REACT_APP_BUILD}`
 //       }
 //     } catch(err) {

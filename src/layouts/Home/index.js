@@ -12,14 +12,15 @@ const Home = props => {
 
   const weather = <WidgetWeather apiKey="4396d83008e8fffd5da04d56eba9faba" zipCode="07052" />
   const stat1 = <WidgetStat />
-  const clockEaster = <WidgetClockRotary location="America/New_York" locationText="New York, NY" />
+  const clockEasternDigital = <WidgetClock location="America/New_York" locationText="New York, NY" />
+  const clockEasten = <WidgetClockRotary location="America/New_York" locationText="New York, NY" />
   const clockPacific = <WidgetClockRotary location="America/Los_Angeles" locationText="Santa Monica, CA" />
   const calendarDay = <WidgetCalendarDay location="America/New_York" locationText="New York, NY" />
   // const closkPacific = <WidgetClock location="America/Los_Angeles" locationText="Santa Monica, NY" />
 
   return (
     <Fragment>
-      <StatusRow widgets={[calendarDay,clockEaster,clockPacific,stat1,weather]} />
+      <StatusRow widgets={[clockEasternDigital,calendarDay,clockEasten,clockPacific,stat1,weather]} />
     </Fragment>
   ) 
 }

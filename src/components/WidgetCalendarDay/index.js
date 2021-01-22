@@ -12,7 +12,7 @@ import './styles.scss'
  */
 
 const WidgetClock = props => {
-  const [dateTime, setDateTime] = useState(null)
+  const [dateTime, setDateTime] = useState(null) // eslint-disable-line
 
   useEffect(() => {
     const interval = setInterval(() => {
