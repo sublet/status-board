@@ -27,7 +27,7 @@ const WidgetWeather = props => {
   return (
     <div className="widget">
       {!conditions && <p>Loading</p>}
-      {conditions && <p>LOADED!</p>}
+      {conditions && <p>Weather Info LOADED!</p>}
     </div>
   ) 
 }

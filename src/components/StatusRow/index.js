@@ -10,8 +10,10 @@ const StatusRow = props => {
   }
 
   return (
-    <div className="statusRow">
-      {_getContent()}
+    <div className="statusBoard__container">
+      <div className="statusBoard">
+        {_getContent()}
+      </div>
     </div>
   ) 
 }
