@@ -17,4 +17,4 @@ clean:
 	npm install
 
 ngrok:
-	ngrok http 8085 -subdomain=your-domain
+	ngrok http 8085 -subdomain=status-board

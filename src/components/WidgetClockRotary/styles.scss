@@ -21,6 +21,12 @@ $feature : #4b9aaa;
 .widget--rotaryClock {
   * { box-sizing: content-box; }
 
+  flex-direction: column;
+
+  .clock__text {
+    font-size: 1.25rem;
+  }
+
   p {
     color: $white;
     font-size: 0.8em;

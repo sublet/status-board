@@ -52,8 +52,8 @@ const WidgetClock = props => {
   return (
     <div className="widget widget--clock">
       <div id="clock">
-        <p class="date">{_getDate()}</p>
-        <p class="time">{_getTime()}</p>
+        <p className="date">{_getDate()}</p>
+        <p className="time">{_getTime()}</p>
       </div>
     </div>
   ) 

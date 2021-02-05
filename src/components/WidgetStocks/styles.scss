@@ -1,0 +1,34 @@
+.statusBoard .widget.widget--stocks {
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  
+  & > header, & > div {
+    width: 100%;
+  }
+
+  & > header {
+    margin-bottom: 1rem;
+    h5 { margin: 0; }
+    h2 { margin: 0; }
+  }
+
+  .stocks {
+    &__stock {
+      margin-bottom: 1rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      &__meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: .85rem;
+      }
+    }
+  }
+}

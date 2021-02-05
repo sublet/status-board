@@ -59,16 +59,16 @@ const WidgetClock = props => {
 
   return (
     <div className="widget widget--calendarDay">
-      <div class="calender-object">
-        <div class="date">
+      <div className="calender-object">
+        <div className="date">
           <span id="date">{_getDate()}</span>
           <span id="day">{_getDay()}</span>
           <span id="time">{_getTime()}</span>
         </div>
-        <div class="weather">
-          <span class="icons">&#xf053;</span><span id="temp"></span><br />
-          <span class="icons" id="weather-icon"></span><span id="desc"></span><br />
-          <span class="icons">&#xf04e;</span><span id="humidity"></span>
+        <div className="weather">
+          <span className="icons">&#xf053;</span><span id="temp"></span><br />
+          <span className="icons" id="weather-icon"></span><span id="desc"></span><br />
+          <span className="icons">&#xf04e;</span><span id="humidity"></span>
         </div>
         <div id="details">
           <div id="year">{_getYear()}</div>
